@@ -1,3 +1,5 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,25 +9,35 @@
   <link
     rel="shortcut icon"
     type="image/png"
-    href=""
+    href="{% static "" %}"
   >
   <title>Backlog Tracker</title>
+  <link rel="stylesheet" type="text/css" href="{% static "css/base.css" %}">
   {% block head %}
   {% endblock %}
 </head>
 <body>
   <header>
-    <div class="">
-      <a href="/">
+    <div class="header-logo-container">
+      <a href="{% url "home" %}">
         <img 
-          src=""
+          src="{% static "" %}"
           alt=""
         >
       </a>
     </div>
     <nav>
       <ul>
-        <li><a href="/about">About</a></li>
+        {% if user.is_authenticated  %}
+          <li><a href="{% url "game-index" %}">All Backlogged Games</a></li>
+          <li><a href="{% url "game-create" %}">Add a Game</a></li>
+          <li><a href="{% url "about" %}">About</a></li>
+          <li><a href="{% url "logout" %}">Log Out</a></li>
+        {% else %}
+          <li><a href="{% url 'about' %}">About</a></li>
+          <li><a href="{% url 'home' %}">Login</a></li>
+          <li><a href="{% url 'signup' %}">Sign Up</a></li>
+        {% endif %}
       </ul>
     </nav>
   </header>
