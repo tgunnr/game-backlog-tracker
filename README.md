@@ -19,7 +19,7 @@ A simple and easy way to track those pesky backlogged games you can't even remem
 ![HEROKU](https://img.shields.io/badge/Heroku-430098?style=for-the-badge&logo=heroku&logoColor=white)
 
 ![VS Code](https://img.icons8.com/?size=100&id=9OGIyU8hrxW5&format=png&color=000000)
-![Python](https://icons8.com/icon/13441/python)
+![Python](https://img.icons8.com/?size=100&id=13441&format=png&color=000000)
 ![Django](https://img.icons8.com/?size=100&id=IuuVVwsdTi2v&format=png&color=000000)
 
 ## Credits
