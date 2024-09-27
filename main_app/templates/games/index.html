@@ -20,8 +20,8 @@
         <div class="card-content">
           <div class="card-img-container">
             <img 
-              src="{% static '' %}" 
-              alt=""
+              src="{% static 'images/' %}{{ game.genre }}.png" 
+              alt="{{ game.get_genre_display }} image"
             >
           </div>
           <h2 class="card-title">{{ game.name }}</h2>
