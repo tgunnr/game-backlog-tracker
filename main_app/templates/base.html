@@ -18,14 +18,6 @@
 </head>
 <body>
   <header>
-    <div class="header-logo-container">
-      <a href="{% url "home" %}">
-        <img 
-          src="{% static "" %}"
-          alt=""
-        >
-      </a>
-    </div>
     <nav>
       <ul>
         {% if user.is_authenticated  %}

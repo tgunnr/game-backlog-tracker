@@ -14,8 +14,8 @@
 <section class="game-container">
   <div class="game-img">
     <img 
-      src="{% static '' %}" 
-      alt=""
+      src="{% static 'images/' %}{{ game.genre }}.png" 
+      alt="{{ game.get_genre_display }} image"
     >
   </div>
   <div class="game-details">
@@ -29,5 +29,6 @@
     </div>
   </div>
 </section>
+
 
 {% endblock %}
