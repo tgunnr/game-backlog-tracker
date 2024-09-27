@@ -1,0 +1,51 @@
+/* About Page CSS */
+
+h1 {
+  text-align: center;
+  font-size: 32px;
+  margin-top: 20px;
+  color: #333;
+}
+
+.page-content {
+  font-size: 18px;
+  color: #555;
+  line-height: 1.8;
+  margin: 20px auto;
+  max-width: 600px;
+  text-align: center;
+}
+
+hr {
+  width: 50%;
+  margin: 20px auto;
+  border: 0;
+  height: 2px;
+  background-color: #333;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 20px auto;
+  text-align: center;
+}
+
+ul li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+ul li a {
+  text-decoration: none;
+  color: #007bff;
+  font-size: 18px;
+  border: 2px solid transparent;
+  padding: 5px 10px;
+  transition: color 0.3s, border 0.3s;
+}
+
+ul li a:hover {
+  color: #0056b3;
+  border-bottom: 2px solid #007bff;
+}
