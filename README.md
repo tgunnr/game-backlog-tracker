@@ -9,7 +9,7 @@ A simple and easy way to track those pesky backlogged games you can't even remem
 1. Create an account
 2. Sign In
 3. Add a new game
-    1. Edit and Delete your games
+    1. Edit or Delete your games
 
 ## Technologies Used
 ![html5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
